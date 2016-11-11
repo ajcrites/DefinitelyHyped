@@ -1,0 +1,4 @@
+definitely_hyped/DefinitelyTyped
+definitely_hyped/target/
+Cargo.lock
+**/*.rs.bk
