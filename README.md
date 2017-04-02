@@ -8,3 +8,5 @@ a convenient webpage.
 
 Check to see if a module you want has types. If not, then
 [get to work!](https://github.com/DefinitelyTyped/DefinitelyTyped#how-can-i-contribute)
+
+docker run -v $PWD/definitely_hyped:/definitely_hyped -w /definitely_hyped jimmycuadra/rust cargo build --release --target=x86_64-unknown-linux-gnu
