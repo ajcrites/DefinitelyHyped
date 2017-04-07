@@ -65,6 +65,7 @@ fn main() {
         bucket: bucket,
         key: "@types.json".to_string(),
         body: Some(json::stringify(types_names).into_bytes()),
+        acl: Some("public-read".to_string()),
 
         request_payer: None,
         content_encoding: None,
@@ -81,7 +82,6 @@ fn main() {
         content_length: None,
         grant_read: None,
         grant_write_acp: None,
-        acl: None,
         grant_full_control: None,
         sse_customer_algorithm: None,
         content_type: None,
