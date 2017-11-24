@@ -1,14 +1,15 @@
 extern crate json;
-extern crate rusoto;
+extern crate rusoto_core;
+extern crate rusoto_s3;
 
 use std::process::{Command, exit};
 use std::fs::read_dir;
 use std::path::Path;
 use std::env;
 
-use rusoto::{ChainProvider, ProfileProvider, Region};
-use rusoto::s3::{S3Client, PutObjectRequest};
-use rusoto::default_tls_client;
+use rusoto_core::{ChainProvider, ProfileProvider, Region};
+use rusoto_s3::{S3, S3Client, PutObjectRequest};
+use rusoto_core::default_tls_client;
 
 fn main() {
     const REPO_PATH: &'static str = "DefinitelyTyped";
